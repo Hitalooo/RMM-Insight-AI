@@ -1,0 +1,33 @@
+# Ambiente virtual
+.venv/
+
+# Variáveis de ambiente
+.env
+i
+# Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+logs/
+
+# Banco SQLite (caso usado em testes)
+*.db
+
+# Arquivos do VS Code
+.vscode/
+
+# Arquivos do sistema
+Thumbs.db
+.DS_Store
+
+# Migrações temporárias
+instance/
+
+# Backups
+backups/
+
+# Playwright
+playwright-report/
+test-results/
