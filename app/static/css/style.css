@@ -1,0 +1,84 @@
+:root{
+    --bg:#0f172a;
+    --sidebar:#111827;
+    --card:#1e293b;
+    --text:#f8fafc;
+    --secondary:#94a3b8;
+    --primary:#2563eb;
+    --border:#334155;
+}
+
+body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:Segoe UI, Arial, sans-serif;
+}
+
+.sidebar{
+    width:250px;
+    height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+    background:var(--sidebar);
+    border-right:1px solid var(--border);
+}
+
+.logo{
+
+    padding:25px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    color:white;
+
+    text-align:center;
+
+    border-bottom:1px solid var(--border);
+}
+
+.menu{
+
+    margin-top:25px;
+}
+
+.menu a{
+
+    display:block;
+
+    color:var(--secondary);
+
+    text-decoration:none;
+
+    padding:15px 25px;
+
+    transition:.2s;
+}
+
+.menu a:hover{
+
+    background:var(--primary);
+
+    color:white;
+}
+
+.content{
+
+    margin-left:250px;
+
+    padding:30px;
+}
+
+.card{
+
+    background:var(--card);
+
+    border-radius:12px;
+
+    padding:25px;
+
+    border:1px solid var(--border);
+}

@@ -1,13 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <title>RMM Insight AI</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>RMM Insight AI</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
+
 <body>
 
+<div class="sidebar">
+
+<div class="logo">
+
+RMM Insight AI
+
+</div>
+
+<div class="menu">
+
+<a href="/">🏠 Dashboard</a>
+
+<a href="#">🚨 Alertas</a>
+
+<a href="#">🖥 Máquinas</a>
+
+<a href="#">🏢 Clientes</a>
+
+<a href="#">📄 Relatórios</a>
+
+<a href="#">🤖 IA</a>
+
+</div>
+
+</div>
+
+<div class="content">
+
 {% block content %}
+
 {% endblock %}
 
+</div>
+
 </body>
+
 </html>

@@ -1,16 +1,17 @@
 from flask import Flask
 
 from config import Config
-from app.extensions import db, login_manager
+from app.extensions import db
 
 
 def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
 
+    # Inicializa o banco de dados
     db.init_app(app)
-    login_manager.init_app(app)
 
+    # Registra as rotas
     from app.routes import main
     app.register_blueprint(main)
 
