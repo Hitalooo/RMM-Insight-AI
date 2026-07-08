@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>RMM Insight AI</title>
+    <title>RMM Insight AI</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<link rel="stylesheet"
-href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
 
 </head>
 
@@ -21,35 +20,51 @@ href="{{ url_for('static', filename='css/style.css') }}">
 
 <div class="sidebar">
 
-<div class="logo">
+    <div class="logo">
 
-RMM Insight AI
+        RMM Insight AI
 
-</div>
+    </div>
 
-<div class="menu">
+    <div class="menu">
 
-<a href="/">🏠 Dashboard</a>
+        <a href="/">🏠 Dashboard</a>
 
-<a href="#">🚨 Alertas</a>
+        <a href="#">🚨 Alertas</a>
 
-<a href="#">🖥 Máquinas</a>
+        <a href="#">🖥 Máquinas</a>
 
-<a href="#">🏢 Clientes</a>
+        <a href="#">🏢 Clientes</a>
 
-<a href="#">📄 Relatórios</a>
+        <a href="#">📈 Relatórios</a>
 
-<a href="#">🤖 IA</a>
+        <a href="#">⚙ Configurações</a>
 
-</div>
+    </div>
 
 </div>
 
 <div class="content">
 
-{% block content %}
+    <nav class="topbar">
 
-{% endblock %}
+        <div>
+
+            <h4>Dashboard</h4>
+
+        </div>
+
+        <div>
+
+            Versão 0.1
+
+        </div>
+
+    </nav>
+
+    {% block content %}
+
+    {% endblock %}
 
 </div>
 
