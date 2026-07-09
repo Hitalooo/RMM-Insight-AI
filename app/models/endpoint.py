@@ -1,9 +1,9 @@
 from app.extensions import db
 
 
-class Cliente(db.Model):
+class Endpoint(db.Model):
 
-    __tablename__ = "clientes"
+    __tablename__ = "endpoints"
 
     id = db.Column(
         db.Integer,
@@ -15,7 +15,6 @@ class Cliente(db.Model):
         nullable=False
     )
 
-    criado_em = db.Column(
-        db.DateTime,
-        server_default=db.func.now()
+    sistema_operacional = db.Column(
+        db.String(100)
     )

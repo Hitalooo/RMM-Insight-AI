@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Config:
+
     SECRET_KEY = os.getenv("SECRET_KEY")
 
     SQLALCHEMY_DATABASE_URI = (
@@ -13,5 +14,9 @@ class Config:
         f"{os.getenv('DB_PORT')}/"
         f"{os.getenv('DB_NAME')}"
     )
+
+    print("======================================")
+    print("BANCO:", SQLALCHEMY_DATABASE_URI)
+    print("======================================")
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
