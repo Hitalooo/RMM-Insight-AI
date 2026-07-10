@@ -1,0 +1,174 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<div class="page-header">
+
+    <div>
+
+        <h2>Dashboard</h2>
+
+        <p>
+            Monitoramento inteligente do ambiente Datto RMM
+        </p>
+
+    </div>
+
+</div>
+
+<div class="cards">
+
+    <div class="stat-card">
+
+        <div class="icon blue">
+
+            <i class="bi bi-buildings-fill"></i>
+
+        </div>
+
+        <div>
+
+            <span>Clientes</span>
+
+            <h2 class="counter" data-target="248">0</h2>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="icon green">
+
+            <i class="bi bi-pc-display"></i>
+
+        </div>
+
+        <div>
+
+            <span>Endpoints</span>
+
+            <h2 class="counter" data-target="248">0</h2>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="icon orange">
+
+            <i class="bi bi-exclamation-circle-fill"></i>
+
+        </div>
+
+        <div>
+
+            <span>Alertas</span>
+
+            <h2 class="counter" data-target="248">0</h2>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="icon red">
+
+            <i class="bi bi-fire"></i>
+
+        </div>
+
+        <div>
+
+            <span>Críticos</span>
+
+            <h2 class="counter" data-target="248">0</h2>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="dashboard-grid">
+
+    <div class="panel">
+
+        <h4>
+
+            <i class="bi bi-bell-fill"></i>
+
+            Últimos Alertas
+
+        </h4>
+
+        <hr>
+
+        <p>Nenhum alerta carregado.</p>
+
+    </div>
+
+    <div class="panel">
+
+        <h4>
+
+            <i class="bi bi-arrow-repeat"></i>
+
+            Última Sincronização
+
+        </h4>
+
+        <hr>
+
+        <p>
+
+            Status:
+            <span class="status-success">
+
+                ✔ Sucesso
+
+            </span>
+
+        </p>
+
+        <p>10/07/2026 08:15</p>
+
+    </div>
+
+</div>
+
+<div class="panel ia-panel">
+
+    <h4>
+
+        <i class="bi bi-robot"></i>
+
+        Inteligência Artificial
+
+    </h4>
+
+    <hr>
+
+    <p>
+
+        Em breve este painel exibirá:
+
+    </p>
+
+    <ul>
+
+        <li>Clientes com maior quantidade de alertas</li>
+
+        <li>Máquinas instáveis</li>
+
+        <li>Possíveis falhas futuras</li>
+
+        <li>Resumo diário automático</li>
+
+    </ul>
+
+</div>
+
+{% endblock %}
